@@ -1,0 +1,178 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPctCrZWUQo7NK1T0nvht6G",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/VEENA20221CCS0149/Data-Handling-and-Visualization/blob/main/Spatial_data\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import folium\n",
+        "\n",
+        "mymap = folium.Map(\n",
+        "    location=[15.139393, 76.921440],\n",
+        "    width=950,\n",
+        "    height=550,\n",
+        "    zoom_start=12,  # Correctly indented\n",
+        "    tiles=\"OpenStreetMap\"\n",
+        ")\n",
+        "\n",
+        "folium.Marker(\n",
+        "    location=[15.139393, 76.921440],\n",
+        "    popup=\"Ballari\",\n",
+        "    icon=folium.Icon(color=\"red\")\n",
+        ").add_to(mymap)\n",
+        "\n",
+        "mymap"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 465
+        },
+        "id": "0Zk7fOXhfnfX",
+        "outputId": "7cef2f10-88c7-4527-f315-275cb8794e7a"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<folium.folium.Map at 0x7cc160df7af0>"
+            ],
+            "text/html": [
+              "<div style=\"width:100%;\"><div style=\"position:relative;width:100%;height:0;padding-bottom:60%;\"><span style=\"color:#565656\">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc=\"&lt;!DOCTYPE html&gt;\n",
+              "&lt;html&gt;\n",
+              "&lt;head&gt;\n",
+              "    \n",
+              "    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;\n",
+              "    \n",
+              "        &lt;script&gt;\n",
+              "            L_NO_TOUCH = false;\n",
+              "            L_DISABLE_3D = false;\n",
+              "        &lt;/script&gt;\n",
+              "    \n",
+              "    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;\n",
+              "    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;\n",
+              "    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;\n",
+              "    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;\n",
+              "    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;\n",
+              "    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;\n",
+              "    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;\n",
+              "    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;\n",
+              "    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;\n",
+              "    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;\n",
+              "    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;\n",
+              "    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;\n",
+              "    \n",
+              "            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,\n",
+              "                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;\n",
+              "            &lt;style&gt;\n",
+              "                #map_7161a400353d22357279da1f18d094f9 {\n",
+              "                    position: relative;\n",
+              "                    width: 950.0px;\n",
+              "                    height: 550.0px;\n",
+              "                    left: 0.0%;\n",
+              "                    top: 0.0%;\n",
+              "                }\n",
+              "                .leaflet-container { font-size: 1rem; }\n",
+              "            &lt;/style&gt;\n",
+              "        \n",
+              "&lt;/head&gt;\n",
+              "&lt;body&gt;\n",
+              "    \n",
+              "    \n",
+              "            &lt;div class=&quot;folium-map&quot; id=&quot;map_7161a400353d22357279da1f18d094f9&quot; &gt;&lt;/div&gt;\n",
+              "        \n",
+              "&lt;/body&gt;\n",
+              "&lt;script&gt;\n",
+              "    \n",
+              "    \n",
+              "            var map_7161a400353d22357279da1f18d094f9 = L.map(\n",
+              "                &quot;map_7161a400353d22357279da1f18d094f9&quot;,\n",
+              "                {\n",
+              "                    center: [15.139393, 76.92144],\n",
+              "                    crs: L.CRS.EPSG3857,\n",
+              "                    zoom: 12,\n",
+              "                    zoomControl: true,\n",
+              "                    preferCanvas: false,\n",
+              "                }\n",
+              "            );\n",
+              "\n",
+              "            \n",
+              "\n",
+              "        \n",
+              "    \n",
+              "            var tile_layer_8b4a44c2710a14b748c7210b8e3c6110 = L.tileLayer(\n",
+              "                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,\n",
+              "                {&quot;attribution&quot;: &quot;Data by \\u0026copy; \\u003ca target=\\&quot;_blank\\&quot; href=\\&quot;http://openstreetmap.org\\&quot;\\u003eOpenStreetMap\\u003c/a\\u003e, under \\u003ca target=\\&quot;_blank\\&quot; href=\\&quot;http://www.openstreetmap.org/copyright\\&quot;\\u003eODbL\\u003c/a\\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}\n",
+              "            ).addTo(map_7161a400353d22357279da1f18d094f9);\n",
+              "        \n",
+              "    \n",
+              "            var marker_830d6afb67b40000c24da108fa95f500 = L.marker(\n",
+              "                [15.139393, 76.92144],\n",
+              "                {}\n",
+              "            ).addTo(map_7161a400353d22357279da1f18d094f9);\n",
+              "        \n",
+              "    \n",
+              "            var icon_b1007ca6c7a0804d9465ef5782f76b9f = L.AwesomeMarkers.icon(\n",
+              "                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;info-sign&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;glyphicon&quot;}\n",
+              "            );\n",
+              "            marker_830d6afb67b40000c24da108fa95f500.setIcon(icon_b1007ca6c7a0804d9465ef5782f76b9f);\n",
+              "        \n",
+              "    \n",
+              "        var popup_d9dfc4af5b22f99387683a6fb1b9561c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});\n",
+              "\n",
+              "        \n",
+              "            \n",
+              "                var html_ab8b2fccae8e3d8be1917ee99081638a = $(`&lt;div id=&quot;html_ab8b2fccae8e3d8be1917ee99081638a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Ballari&lt;/div&gt;`)[0];\n",
+              "                popup_d9dfc4af5b22f99387683a6fb1b9561c.setContent(html_ab8b2fccae8e3d8be1917ee99081638a);\n",
+              "            \n",
+              "        \n",
+              "\n",
+              "        marker_830d6afb67b40000c24da108fa95f500.bindPopup(popup_d9dfc4af5b22f99387683a6fb1b9561c)\n",
+              "        ;\n",
+              "\n",
+              "        \n",
+              "    \n",
+              "&lt;/script&gt;\n",
+              "&lt;/html&gt;\" style=\"position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;\" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "zfPbwKUDfx--"
+      }
+    }
+  ]
+}
